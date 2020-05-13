@@ -5,61 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NF-Blog</title>
   </head>
+
   <body>
     <header>
       <img
-        src="img/neuefische-gmbh-logo.svg"
-        alt="Firmenlogo neue fische - School and Pool for Digital Talent"
+        src="/img/neuefische-gmbh-logo.svg"
+        alt="neuefische Logo - School and Pool for Digital Talent"
       />
       <h1>neuefische Blog</h1>
       <nav>
-        <a>articles</a>
-        <a>imprint</a>
+        <a href="#articles">articles</a>
+        <a href="#imprint">imprint</a>
       </nav>
     </header>
 
-    <main>
+    <main id="articles">
       <article>
         <h2>HTML</h2>
         <h3>The art of sectioning</h3>
-        <section style="width: 80%; float: left;">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            officiis quibusdam nostrum sed quas, laudantium repellendus hic.
-            Esse dolore in blanditiis! Cupiditate autem facilis iure doloribus
-            enim aperiam delectus quam maiores ab alias omnis itaque quibusdam
-            eum, nemo aut vero, provident animi cum. At expedita vitae facere!
-            Maxime, est possimus?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-            ipsam, rerum quia consequatur similique sapiente itaque neque, error
-            deserunt amet ut. Aut culpa eligendi cupiditate, explicabo quo
-            aperiam exercitationem! Consequuntur?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-            facilis at placeat quas veritatis corporis ab maiores perspiciatis
-            eaque reprehenderit.
-          </p>
-        </section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          officiis quibusdam nostrum sed quas, laudantium repellendus hic. Esse
+          dolore in blanditiis! Cupiditate autem facilis iure doloribus enim
+          aperiam delectus quam maiores ab alias omnis itaque quibusdam eum,
+          nemo aut vero, provident animi cum. At expedita vitae facere! Maxime,
+          est possimus?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto ipsam,
+          rerum quia consequatur similique sapiente itaque neque, error deserunt
+          amet ut. Aut culpa eligendi cupiditate, explicabo quo aperiam
+          exercitationem! Consequuntur?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+          facilis at placeat quas veritatis corporis ab maiores perspiciatis
+          eaque reprehenderit.
+        </p>
 
-        <aside style="width: 20%; float: right;">
+        <aside>
           <h3>Author</h3>
           <h4>Bibi Blocksberg</h4>
           <img
-            src="img/author.jpeg"
-            alt="Autor Bibi Blocksberg von hinten mit Blick auf Fluss und Wald"
+            src="/img/author.jpeg"
+            alt="Backview of author Bibi Blocksberg sitting on a riverside with view of a forest"
           />
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            </li>
           </ul>
         </aside>
+
+        <form>
+          <label for="">Name:<input type="text" required /></label>
+          <br />
+          <label for=""
+            >Your comment:
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+          </label>
+          <button>Send</button>
+        </form>
+
+        <section>
+          <h3>Thoughts on HTML - The art of sectioning</h3>
+
+          <p>Jan Grade 2020-05-13 23:00</p>
+          <p>Mensch, das schaut ja schon richtig professionell aus!</p>
+          <br />
+          <p>Jerry Erbs 2020-05-14 08:00</p>
+          <p>Jan!! Wieso bist du so spät noch am Rechner?! &#x1F621;</p>
+        </section>
       </article>
     </main>
-    <footer>
+
+    <footer id="imprint">
       <p>&copy; neuefische GmbH</p>
     </footer>
   </body>
