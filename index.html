@@ -3,89 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script defer src="/js/jquery-3.5.1.min.js"></script>
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
     <title>NF-Blog</title>
   </head>
 
-  <body>
-    <header>
-      <img
-        src="/img/neuefische-gmbh-logo.svg"
-        alt="neuefische Logo - School and Pool for Digital Talent"
-      />
-      <h1>neuefische Blog</h1>
-      <nav>
+  <body class="container">
+    <header class="row shadow mb-2">
+      <div class="col col-md-3 mr-1">
+        <img
+          class="img-fluid"
+          src="img\neuefische-gmbh-logo.svg"
+          alt="Logo neuefische - School and Pool for Digital Talent"
+        />
+      </div>
+
+      <div class="col col-md-3">
+        <h4>neuefische Blog</h4>
+      </div>
+
+      <nav class="col col-md-3">
         <a href="#articles">articles</a>
         <a href="#imprint">imprint</a>
       </nav>
     </header>
 
-    <main id="articles">
-      <article>
-        <h2>HTML</h2>
-        <h3>The art of sectioning</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-          officiis quibusdam nostrum sed quas, laudantium repellendus hic. Esse
-          dolore in blanditiis! Cupiditate autem facilis iure doloribus enim
-          aperiam delectus quam maiores ab alias omnis itaque quibusdam eum,
-          nemo aut vero, provident animi cum. At expedita vitae facere! Maxime,
-          est possimus?
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto ipsam,
-          rerum quia consequatur similique sapiente itaque neque, error deserunt
-          amet ut. Aut culpa eligendi cupiditate, explicabo quo aperiam
-          exercitationem! Consequuntur?
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          facilis at placeat quas veritatis corporis ab maiores perspiciatis
-          eaque reprehenderit.
-        </p>
+    <main id="articles" class="mt-5 shadow p-5">
+      <article class="row">
+        <div class="col-12 col-md-8 text-justify">
+          <h2 class="text-muted h5">HTML</h2>
+          <h3 class="mb-4 h2">The art of sectioning</h3>
+          <div>
+            <p class="pb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              officiis quibusdam nostrum sed quas, laudantium repellendus hic.
+              Esse dolore in blanditiis! Cupiditate autem facilis iure doloribus
+              enim aperiam delectus quam maiores ab alias omnis itaque quibusdam
+              eum, nemo aut vero, provident animi cum. At expedita vitae facere!
+              Maxime, est possimus?
+            </p>
+          </div>
+          <div class="pb-1">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+              ipsam, rerum quia consequatur similique sapiente itaque neque,
+              error deserunt amet ut. Aut culpa eligendi cupiditate, explicabo
+              quo aperiam exercitationem! Consequuntur?
+            </p>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+            facilis at placeat quas veritatis corporis ab maiores perspiciatis
+            eaque reprehenderit.
+          </p>
+        </div>
 
-        <aside>
-          <h3>Author</h3>
-          <h4>Bibi Blocksberg</h4>
-          <img
-            src="/img/author.jpeg"
-            alt="Backview of author Bibi Blocksberg sitting on a riverside with view of a forest"
-          />
-          <ul>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            </li>
-          </ul>
-        </aside>
-
-        <form>
-          <label for="">Name:<input type="text" required /></label>
-          <br />
-          <label for=""
-            >Your comment:
-            <textarea name="" id="" cols="50" rows="10"></textarea>
-          </label>
-          <button>Send</button>
-        </form>
-
-        <section>
-          <h3>Thoughts on HTML - The art of sectioning</h3>
-
-          <p>Jan Grade 2020-05-13 23:00</p>
-          <p>Mensch, das schaut ja schon richtig professionell aus!</p>
-          <br />
-          <p>Jerry Erbs 2020-05-14 08:00</p>
-          <p>Jan!! Wieso bist du so spät noch am Rechner?! &#x1F621;</p>
-        </section>
+        <div class="col-12 col-md-4 align-self-center">
+          <aside>
+            <h3>Author</h3>
+            <h4>Bibi Blocksberg</h4>
+            <img
+              class="img-fluid rounded-circle"
+              src="/img/author.jpeg"
+              alt="Backview of author Bibi Blocksberg sitting on a riverside with view of a forest"
+            />
+            <h5></h5>
+            <ul>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                  >I am a link</a
+                >
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                  >I am another link</a
+                >
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                  >I am an interesting link</a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
       </article>
     </main>
 
-    <footer id="imprint">
+    <h4>Comments</h4>
+    <p>Fill in the form to share your thoughts about the article</p>
+    <form>
+      <label for="">Name:<input type="text" required /></label>
+      <br />
+      <label for=""
+        >Your comment:
+        <textarea name="" id="" cols="50" rows="10"></textarea>
+      </label>
+      <button>Send</button>
+    </form>
+
+    <section class="mt-5">
+      <h4>Thoughts on HTML - The art of sectioning</h4>
+
+      <p>Jan Grade 2020-05-13 23:00</p>
+      <p>Mensch, das schaut ja schon richtig professionell aus!</p>
+      <br />
+      <p>Jerry Erbs 2020-05-14 08:00</p>
+      <p>Jan!! Wieso bist du so spät noch am Rechner?! &#x1F621;</p>
+    </section>
+
+    <footer id="imprint" class="row">
       <p>&copy; neuefische GmbH</p>
     </footer>
   </body>
