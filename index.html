@@ -3,118 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A blog by neuefische. Lern Web Development fast."
+    />
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <!-- Bootstrap JS, just in case -->
     <script defer src="/js/jquery-3.5.1.min.js"></script>
+    <script defer src="/js/popper.min.js"></script>
     <script defer src="/js/bootstrap.bundle.min.js"></script>
-    <title>NF-Blog</title>
+
+    <title>neuefische Blog</title>
   </head>
 
-  <body class="container">
-    <header class="row shadow mb-2">
-      <div class="col col-md-3 mr-1">
-        <img
-          class="img-fluid"
-          src="img\neuefische-gmbh-logo.svg"
-          alt="Logo neuefische - School and Pool for Digital Talent"
-        />
-      </div>
+  <body class="container py-5">
+    <header
+      class="d-flex flex-column align-items-center flex-md-row justify-content-md-between align-items-md-end"
+    >
+      <img
+        src="img\neuefische-gmbh-logo.svg"
+        alt="Logo neuefische - School and Pool for Digital Talent"
+      />
 
-      <div class="col col-md-3">
-        <h4>neuefische Blog</h4>
-      </div>
+      <h1 class="mt-2">neuefische Blog</h1>
 
-      <nav class="col col-md-3">
-        <a href="#articles">articles</a>
-        <a href="#imprint">imprint</a>
+      <nav class="mt-2">
+        <a class="ml-2" href="#articles">Articles</a>
+        <a href="#imprint">Imprint</a>
       </nav>
     </header>
 
     <main id="articles" class="mt-5 shadow p-5">
-      <article class="row">
-        <div class="col-12 col-md-8 text-justify">
-          <h2 class="text-muted h5">HTML</h2>
-          <h3 class="mb-4 h2">The art of sectioning</h3>
-          <div>
-            <p class="pb-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              officiis quibusdam nostrum sed quas, laudantium repellendus hic.
-              Esse dolore in blanditiis! Cupiditate autem facilis iure doloribus
-              enim aperiam delectus quam maiores ab alias omnis itaque quibusdam
-              eum, nemo aut vero, provident animi cum. At expedita vitae facere!
-              Maxime, est possimus?
-            </p>
-          </div>
-          <div class="pb-1">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-              ipsam, rerum quia consequatur similique sapiente itaque neque,
-              error deserunt amet ut. Aut culpa eligendi cupiditate, explicabo
-              quo aperiam exercitationem! Consequuntur?
-            </p>
-          </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-            facilis at placeat quas veritatis corporis ab maiores perspiciatis
-            eaque reprehenderit.
-          </p>
-        </div>
+      <article>
+        <div class="row">
+          <section class="col-12 col-md-8 text-justify">
+            <h2 class="text-muted h5">HTML</h2>
+            <h3 class="mb-4 h2">The Art of Sectioning</h3>
 
-        <div class="col-12 col-md-4 align-self-center">
-          <aside>
-            <h3>Author</h3>
-            <h4>Bibi Blocksberg</h4>
-            <img
-              class="img-fluid rounded-circle"
-              src="/img/author.jpeg"
-              alt="Backview of author Bibi Blocksberg sitting on a riverside with view of a forest"
-            />
-            <h5></h5>
-            <ul>
+            <p>
+              Franconia dolor ipsum sit amet, drei im Weggla Scheiferla Debb
+              wadd amol Herzkaschber. Keesbleedla nacherd Wamberd duusln des is
+              fei schäi aaschifdi Wärdslasglaaber ninder. Obacht Bamberla dei
+              ozullds Buddlasbaa kannsd selber essen Gaafer. Oodl ausfohrn hie
+              Gwaaf, Schtodt Gibskupf duusln die Sunna scheind. Verregds Glumb,
+              Gaggerla Grawallschachdl graina Abflbuddzn Daabschwätzer
+              Wärdslasglaaber!
+            </p>
+            <p>
+              Zwa Broudwärschd Brodwerschd Ruudsleffl, Bräi Graffl? Gschwaddl
+              Magndredzerla schdrullern hald dei Goschn närrisch. Probiers hald
+              mol schlamperd, Baggschdaakees Grisdkindlasmargd Dreegbambl nunda
+              dei ozullds Buddlasbaa kannsd selber essen! Misdn a weng weng,
+              Laddern meine Aungdeggl sin su schwer. Keeszibfl
+              muggsmeislaschdill Wassersubbn Windbeidl?
+            </p>
+            <p>
+              Omd oodoun, logger schboorn. Buddlasbaa Schtodt Grawallschachdl
+              baggn Oarschgradzer Buddlasbaa Bflunzn. Fraa Glumb Vodder gwieß,
+              Oamasn arch ooreng! Lach ned so gscheggerd Neigschmegder
+              schdrullern fei wergli. Barragn maadschn Lebkoung, Affnhidz
+              nauswärds Brodworschdfinger Badzer Seidla.
+            </p>
+            <p>
+              Baa du heersd wohl schlecht duusln gell a su a Hallodri Kerng!
+              Schdumhogger, des sooch ich der fiesln Mennla nou Hulzkaschber
+              aufschdeh badscherdnass! Des konnsd vergessn graina, Allmächd
+              Wamberd. Foosern Bliedschn sunsd hau i der anne naaf schdrullern
+              Gsichdsbarragn! Buu i bin doch ned dem sei Bolandi Hundsgrübbl
+              Grisdkindlasmargd heid nämmer. I hob denkt dahamm debberd
+              nodwendich.
+            </p>
+          </section>
+
+          <div class="col-12 col-md-4 align-self-center">
+            <aside class="border border-muted p-4 rounded text-center">
+              <h3 class="text-muted h6">Author</h3>
+              <address rel="author">
+                <h4>Bibi Blocksberg</h4>
+                <img
+                  class="img-fluid rounded-circle my-3"
+                  src="/img/author.jpeg"
+                  alt="Rear view of author Bibi Blocksberg sitting on a riverbank looking out on a forest"
+                />
+              </address>
+              <h4 class="mt-2">Further Articles</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >CSS Intro</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >JS for beginners</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >React for nOObs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Node start</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+        <footer class="mt-5">
+          <h3>Leave a Comment</h3>
+          <form action="mt-4 row">
+            <div class="col-12 col-md-8">
+              <div class="form-group">
+                <label for="comment_author">Your name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="comment_author"
+                  placeholder="...your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  placeholder="...your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="comment-text">Your message</label>
+                <textarea
+                  id="comment-text"
+                  class="form-control"
+                  name="comment"
+                  rows="10"
+                  placeholder="...say something nice..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group text-right">
+                <button class="btn btn-primary" name="submit">Send</button>
+              </div>
+            </div>
+          </form>
+
+          <section class="mt-5">
+            <h3>Comments</h3>
+            <ul class="mt-4 p-4 border border-rounded list-unstyled">
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >I am a link</a
-                >
+                <address rel="author">
+                  Bill Gates,
+                  <time datetime="2020-05-15T15:20">15.05.2020, 15.20 Uhr</time
+                  >:
+                </address>
+                <q class="text-center lead">
+                  Great article! I wish, I could do stuff like that.
+                </q>
               </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >I am another link</a
-                >
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer"
-                  >I am an interesting link</a
-                >
+              <li class="mt-4">
+                <address rel="author">
+                  Tina Martin,
+                  <time datetime="2020-05-15T16:30">15.05.2020, 16.30 Uhr</time
+                  >:
+                </address>
+                <q class="text-center lead">
+                  Yey, I take your stuff and make it look nice!
+                </q>
               </li>
             </ul>
-          </aside>
-        </div>
+          </section>
+        </footer>
       </article>
     </main>
-
-    <h4>Comments</h4>
-    <p>Fill in the form to share your thoughts about the article</p>
-    <form>
-      <label for="">Name:<input type="text" required /></label>
-      <br />
-      <label for=""
-        >Your comment:
-        <textarea name="" id="" cols="50" rows="10"></textarea>
-      </label>
-      <button>Send</button>
-    </form>
-
-    <section class="mt-5">
-      <h4>Thoughts on HTML - The art of sectioning</h4>
-
-      <p>Jan Grade 2020-05-13 23:00</p>
-      <p>Mensch, das schaut ja schon richtig professionell aus!</p>
-      <br />
-      <p>Jerry Erbs 2020-05-14 08:00</p>
-      <p>Jan!! Wieso bist du so spät noch am Rechner?! &#x1F621;</p>
-    </section>
-
-    <footer id="imprint" class="row">
-      <p>&copy; neuefische GmbH</p>
+    <footer class="mt-5" id="imprint">
+      &copy; neuefische GmbH
     </footer>
   </body>
 </html>
